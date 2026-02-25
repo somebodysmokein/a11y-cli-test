@@ -1,0 +1,33 @@
+name: Accessibility Check
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+
+jobs:
+  accessibility:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+          else
+            npm install
+          fi
+
+      - name: Run Accessibility Check
+        env:
+          GIT_ROOT: ${{ github.workspace }}
+        run: |
+          ./browserstack-cli accessibility --include $GIT_ROOT/src/**/**.jsx --non-strict
