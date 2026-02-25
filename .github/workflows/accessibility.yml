@@ -32,5 +32,7 @@ jobs:
       - name: Run Accessibility Check
         env:
           GIT_ROOT: ${{ github.workspace }}
+          BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
+          BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
         run: |
           ./browserstack-cli-linux accessibility --include $GIT_ROOT/src/**/**.jsx --non-strict
