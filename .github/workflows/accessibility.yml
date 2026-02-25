@@ -30,4 +30,4 @@ jobs:
         env:
           GIT_ROOT: ${{ github.workspace }}
         run: |
-          ./browserstack-cli accessibility --include $GIT_ROOT/src/**/**.jsx --non-strict
+          ./browserstack-cli-linux accessibility --include $GIT_ROOT/src/**/**.jsx --non-strict
