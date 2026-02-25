@@ -36,7 +36,7 @@ function Login({ onLogin }) {
       role="main"
     >      
 
-    <img src="/logo.png" className="absolute top-10 left-10 w-20 h-20" />
+    <img src="/logo.png" className="absolute top-10 left-10 w-20 h-20" alt="Login App Logo" />
     
       <div
         id="login-card"
@@ -49,7 +49,7 @@ function Login({ onLogin }) {
         <form className="space-y-6" onSubmit={handleLogin}>
           {/* Username Field */}
           <div className="flex flex-col">
-            <label className="mb-1 text-sm font-semibold text-white">
+            <label htmlFor="username" className="mb-1 text-sm font-semibold text-white">
               Username
             </label>
             <input
@@ -65,7 +65,7 @@ function Login({ onLogin }) {
 
           {/* Password Field */}
           <div className="flex flex-col">
-            <label className="mb-1 text-sm font-semibold text-white">
+            <label htmlFor="password" className="mb-1 text-sm font-semibold text-white">
               Password
             </label>
             <input
