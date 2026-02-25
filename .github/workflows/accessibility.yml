@@ -26,6 +26,9 @@ jobs:
             npm install
           fi
 
+      - name: Make browserstack-cli executable
+        run: chmod 755 ./browserstack-cli-linux
+
       - name: Run Accessibility Check
         env:
           GIT_ROOT: ${{ github.workspace }}
