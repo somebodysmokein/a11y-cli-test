@@ -36,7 +36,7 @@ function Login({ onLogin }) {
       role="main"
     >      
 
-    <img src="/logo.png" alt="Application logo" className="absolute top-10 left-10 w-20 h-20" />
+    <img src="/logo.png" className="absolute top-10 left-10 w-20 h-20" />alt="LoginApp logo, a colorful gradient design, displayed in the top left corner of the login page"
     
       <div
         id="login-card"
