@@ -1,0 +1,7 @@
+version: 1
+components:
+  react:
+    ImprovedBtn:
+      element: img
+      attributes:
+        - alternative-text: alt
