@@ -34,6 +34,5 @@ jobs:
           GIT_ROOT: ${{ github.workspace }}
           BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
           BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
-        run: |
-          ./browserstack-cli-linux accessibility --include $GIT_ROOT/src/**/**.jsx
-          exit $?
+        run: |          
+          ./browserstack-cli-linux accessibility --include $(find $GIT_ROOT/src -name '*.jsx')
