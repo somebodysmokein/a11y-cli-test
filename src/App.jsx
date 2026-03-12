@@ -36,10 +36,12 @@ function Login({ onLogin }) {
       role="main"
     >      
 
-    <img src="/logo.png" className="absolute top-10 left-10 w-20 h-20" />
-    <img src="/logo.png" cid="newimg" lassName="absolute top-10 right-10 w-20 h-20" />
+    <img src="/logo.png" className="absolute top-10 left-10 w-20 h-20" 
+    alt="Company logo positioned in top-left corner" />
+    <img src="/logo.png" cid="newimg" className="absolute top-10 right-10 w-20 h-20" alt="Company logo positioned in top-right corner" />
+    <img src="/logo.png" id="2-img" className="absolute bottom-10 left-10 w-20 h-20" alt="Company logo positioned in bottom-left corner" />
     
-    <img src='/background.jpg' className="absolute inset-0 w-full h-full object-cover opacity-30" />
+    <img src='/background.jpg' className="absolute inset-0 w-full h-full object-cover opacity-30" alt="Subtle background image creating a layered visual effect behind the login form" />
       <div
         id="login-card"
         className="backdrop-blur-md bg-white/20 shadow-2xl rounded-2xl p-10 w-full max-w-md border border-white/30"
