@@ -36,8 +36,10 @@ function Login({ onLogin }) {
       role="main"
     >      
 
-    <img src="/logo.png" className="absolute top-10 left-10 w-20 h-20" />alt="LoginApp logo, a colorful gradient design, displayed in the top left corner of the login page"
+    <img src="/logo.png" className="absolute top-10 left-10 w-20 h-20" alt="Application logo" />
     
+    <img src='/background.jpg' className="absolute inset-0 w-full h-full object-cover opacity-30" 
+      alt="Subtle background image creating a layered visual effect behind the login form"/>
       <div
         id="login-card"
         className="backdrop-blur-md bg-white/20 shadow-2xl rounded-2xl p-10 w-full max-w-md border border-white/30"
