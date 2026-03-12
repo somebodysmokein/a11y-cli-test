@@ -37,6 +37,7 @@ function Login({ onLogin }) {
     >      
 
     <img src="/logo.png" className="absolute top-10 left-10 w-20 h-20" />
+    <img src="/logo.png" cid="newimg" lassName="absolute top-10 right-10 w-20 h-20" />
     
     <img src='/background.jpg' className="absolute inset-0 w-full h-full object-cover opacity-30" />
       <div
