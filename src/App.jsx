@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import { Dashboard } from "./components/Dashboard";
+import ImprovedBtn from "./components/ImprovedBtn";
 
 function Login({ onLogin }) {
   const [username, setUsername] = useState("");
@@ -36,10 +37,14 @@ function Login({ onLogin }) {
       role="main"
     >      
 
-    <img src="/logo.png" className="absolute top-10 left-10 w-20 h-20" />
-    <img src="/logo.png" className="absolute top-10 right-10 w-20 h-20 opacity-50" />
-    <img src="/logo.png" className="absolute bottom-10 left-10 w-20 h-20 opacity-50" />
-    <img src='/background.jpg' className="absolute inset-0 w-full h-full object-cover opacity-30" />
+    <img src="/logo.png" className="absolute top-10 left-10 w-20 h-20" 
+    alt="Company logo positioned in top-left corner of vibrant gradient background" />
+    <img src="/logo.png" className="absolute top-10 right-10 w-20 h-20 opacity-50" alt="Company logo positioned in top-right corner with reduced opacity" />
+    <img src="/logo.png" className="absolute bottom-10 left-10 w-20 h-20 opacity-50" alt="Company logo positioned in bottom-left corner with reduced opacity" />
+    <img src='/background.jpg' className="absolute inset-0 w-full h-full object-cover opacity-30" alt="Background image with reduced opacity" />
+    <ImprovedBtn />
+
+    
       <div
         id="login-card"
         className="backdrop-blur-md bg-white/20 shadow-2xl rounded-2xl p-10 w-full max-w-md border border-white/30"
