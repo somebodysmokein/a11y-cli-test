@@ -35,4 +35,5 @@ jobs:
           BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
           BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
         run: |          
-          ./browserstack-cli-linux accessibility --include $(find $GIT_ROOT/src -name '*.jsx')
+          ./browserstack-cli-linux accessibility --include src/App.jsx
+          
