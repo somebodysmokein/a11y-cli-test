@@ -42,7 +42,11 @@ function Login({ onLogin }) {
 
      <img src="./logo.png"/>
 
+     <img src="./logo1.png"/>
+
      <ImprovedBtn />
+
+     <ImprovedBtn id="1"/>
     
       
       <div
