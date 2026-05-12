@@ -35,23 +35,21 @@ function Login({ onLogin }) {
       className="flex justify-center items-center min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500"
       data-testid="app-root"
       role="main"
+      aria-label="Login page"
     >      
 
-    <img src="/logo.png" className="absolute top-10 left-10 w-20 h-20" 
-    alt="Company logo positioned in top-left corner of vibrant gradient background" />
-    <img src="/logo.png" className="absolute top-10 right-10 w-20 h-20 opacity-50" alt="Company logo positioned in top-right corner with reduced opacity" />
-    <img src="/logo.png" className="absolute bottom-10 left-10 w-20 h-20 opacity-50" alt="Company logo positioned in bottom-left corner with reduced opacity" />
-    <img src='/background.jpg' className="absolute inset-0 w-full h-full object-cover opacity-30" alt="Background image with reduced opacity" />
-    <ImprovedBtn />
+     <img src="./test.png"/>
 
+     <ImprovedBtn />
     
+      
       <div
         id="login-card"
         className="backdrop-blur-md bg-white/20 shadow-2xl rounded-2xl p-10 w-full max-w-md border border-white/30"
       >
-        <h2 className="text-3xl font-extrabold mb-8 text-center text-white drop-shadow-md">
+        <h1 className="text-3xl font-extrabold mb-8 text-center text-white drop-shadow-md">
           Welcome Back
-        </h2>
+        </h1>
 
         <form className="space-y-6" onSubmit={handleLogin}>
           {/* Username Field */}
@@ -91,7 +89,7 @@ function Login({ onLogin }) {
             type="submit"
             className="w-full bg-yellow-400 text-black font-bold rounded-lg py-2 shadow-md hover:bg-yellow-500 transition transform hover:scale-105"
           >
-            Login
+            Sign In
           </button>
         </form>
       </div>
