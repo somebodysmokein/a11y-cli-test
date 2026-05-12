@@ -40,6 +40,8 @@ function Login({ onLogin }) {
 
      <img src="./test.png"/>
 
+     <img src="./logo.png"/>
+
      <ImprovedBtn />
     
       
